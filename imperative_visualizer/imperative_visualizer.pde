@@ -18,7 +18,7 @@ VideoExport videoExport;
 int canvasWidth = 1080;
 int canvasHeight = 1080;
 
-String audioFileName = "kingfisher.mp3"; // Audio file in data folder
+String audioFileName = "Central Cee Let Go.mp3"; // Audio file in data folder
 
 boolean export = false; // Either export or real time
 boolean generateAudioTxtFile = false; // Will auto generate if export is true and no audio txt file exists
@@ -109,7 +109,7 @@ void setup() {
     minim = new Minim(this);
     track = minim.loadFile(audioFileName, 2048);
     
-    track.loop();
+    track.loop(1);
     
     fft = new FFT( track.bufferSize(), track.sampleRate() );
     
